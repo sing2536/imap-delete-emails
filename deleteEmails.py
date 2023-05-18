@@ -10,7 +10,7 @@ number_of_emails_to_delete = int(input("Enter amount of emails to delete (more t
 username = input("Enter your username: ")
 password = getpass.getpass("Enter your password: ")
 
-print("Please be patient, this can take a while, and you will be advised when the process completes.")
+print("Please be patient as this can take a while, and you will be advised when the process completes.")
 
 def delete_emails():
 
@@ -45,6 +45,6 @@ def delete_emails():
 while True:
     delete_emails()
 
-    choice = input("Do you want to delete more emails again1? (y/n): ")
+    choice = input(f"Do you want to delete {number_of_emails_to_delete} more emails? (y/n): ")
     if choice.lower() != "y":
         break
