@@ -1,4 +1,4 @@
-# windows install: https://www.python.org/downloads/windows/
+# install Python: https://www.python.org/downloads/
 
 import imaplib
 import getpass
