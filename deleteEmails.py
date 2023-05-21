@@ -7,7 +7,7 @@ import getpass
 while True:
         number_of_emails_to_delete = int(input("Enter the amount of emails to delete (can't be more than 1000): "))
         if number_of_emails_to_delete < 1:
-             print("Number of emails should be greater than 1. Please enter a valid value.")
+            print("Number of emails should be greater than 0. Please enter a valid value.")
         elif number_of_emails_to_delete > 1000:
             print("Number of emails exceeds the limit. Please enter a value less than or equal to 1000.")
         else:
