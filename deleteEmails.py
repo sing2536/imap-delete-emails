@@ -4,13 +4,20 @@ import imaplib
 import getpass
 
 # Number of emails to delete
-number_of_emails_to_delete = int(input("Enter amount of emails to delete (more than 1000 may cause issues): "))
+while True:
+        number_of_emails_to_delete = int(input("Enter the amount of emails to delete (can't be more than 1000): "))
+        if number_of_emails_to_delete < 1:
+             print("Number of emails should be greater than 1. Please enter a valid value.")
+        elif number_of_emails_to_delete > 1000:
+            print("Number of emails exceeds the limit. Please enter a value less than or equal to 1000.")
+        else:
+            break
 
 # IMAP server details
 username = input("Enter your username: ")
 password = getpass.getpass("Enter your password: ")
 
-print("Please be patient as this can take a while, and you will be advised when the process completes.")
+print("Please be patient as this can take a while, you will be advised when the process completes.")
 
 def delete_emails():
 
