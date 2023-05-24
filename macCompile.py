@@ -9,6 +9,7 @@ try:
     import PyInstaller.__main__
     PyInstaller.__main__.run([
         '--onefile',
+        '--name=mac_deleteEmails',
         '--distpath=dist/mac',
         os.path.join('deleteEmails.py'),
     ])

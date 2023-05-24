@@ -1,4 +1,4 @@
 build/
-deleteEmails.spec
+*.spec
 .DS_Store
 dist/
