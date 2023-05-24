@@ -1,0 +1,4 @@
+build/
+deleteEmails.spec
+.DS_Store
+dist/
